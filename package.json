@@ -1,0 +1,34 @@
+{
+  "name": "react-unit-testing",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "test": "NODE_ENV=test nyc --reporter=html mocha",
+    "report-coverage": "nyc report --reporter=text-lcov | coveralls"
+  },
+  "nyc": {
+    "sourceMap": false,
+    "instrument": false
+  },
+  "dependencies": {
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1",
+    "react-test-renderer": "^15.6.1"
+  },
+  "devDependencies": {
+    "babel": "^6.23.0",
+    "babel-plugin-istanbul": "^4.1.4",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-register": "^6.24.1",
+    "chai": "^4.1.0",
+    "chai-enzyme": "^0.8.0",
+    "coveralls": "^2.13.1",
+    "enzyme": "^2.9.1",
+    "mocha": "^3.4.2",
+    "nyc": "^11.0.3",
+    "sinon": "^2.3.8",
+    "sinon-chai": "^2.12.0"
+  }
+}
